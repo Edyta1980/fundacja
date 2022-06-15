@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="stylesheet" href="./index.css">
+    <title>Fundacja Końkretnie Pomagamy. Rzuski Las</title>
+</head>
+
+
+<body>
+    <!--nawigacja na srodku??-->
+    <section id="nawigacja">
+        <nav class="navbar navbar-top navbar-expand-lg navbar-dark font-bold-light rounded"
+            style="background-color: rgba(0, 139, 139, 0.7);">
+            <div class="container-fluid">
+                <img width="100px" src="./zdj/logo3.jpg" alt="logo">
+                <div class="row">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav justify-content-center">
+
+                            <li class="nav-item font-monospace">
+                                <a class="nav-link active" href="#home">
+                                    <h3>O nas</h3>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown font-monospace">
+                                <a class="nav-link active dropdown-toggle" href="#my" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <h3> Nasze działania</h3>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item font-monospace" href="#">Hipoterapia</a></li>
+                                    <li><a class="dropdown-item font-monospace" href="#">Wspieramy młodzież</a></li>
+                                    <li><a class="dropdown-item font-monospace" href="#">Pomagamy psom z interwencji</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item font-monospace">
+                                <a class="nav-link active" href="#galeria">
+                                    <h3>Galeria</h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active font-monospace" href="#footer">
+                                    <h3>Kontakt</h3>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="nav-link active"
+                    href="https://www.facebook.com/fundacja.konkretnie.pomagamy/?ref=page_internal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+            </div>
+            </div>
+        </nav>
+    </section>
+    <!---koniec nawigacji-->
+
+    <!--zdjecie glowne buton na srodek??-->
+    <section id="home" class="vh-100" style="
+        background: url(./zdj/main.jpg)
+          center/cover no-repeat;
+      " img class="img-fluid">
+        <div class="container-lg">
+            <a class=" text-light p-2 mb-1"></a>
+            <h1 class="display-1 font-monospace fw-bold p-5 mb-2 overflow-hidden text-light">Fundacja: <br> <strong class="text-light"> Końkretnie Pomagamy</strong></h1>
+        <hr class="text-light"></div>
+
+        <!---main-->
+    
+            <div class="container-md overflow-hidden">
+              
+                    <h3 class="text-danger text-right font-monospace p-5 mb-2 "> Pomagamy, wspieramy, ratujemy
+                    </h3>
+                    
+                   
+                <!---------------formularz-------------------------->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-success text-center" id="exampleModalLabel">
+                                    Zadaj pytanie, zapisz się na jazdę, albo zaoferuj pomoc
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row">
+                                    <div class="col-6">
+                                        <label class="form-label">Imię i nazwisko</label>
+                                        <input type="text" class="form-control"
+                                            placeholder="Wpisz swoje imię i nazwisko">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Miasto</label>
+                                        <input type="text" class="form-control" placeholder="Twoje miasto">
+                                    </div>
+                                    <div class="col12">
+                                        <label for="exampleFormControlInput1" class="form-label">Adres Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="name@example.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="floatingTextarea"> Wpisz wiadomość</label>
+                                        <textarea class="form-control" placeholder="Treść wiadomości"
+                                            id="floatingTextarea"></textarea>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="invalidCheck" required="">
+                                                <label class="form-check-label" for="invalidCheck">
+                                                    Wyrażam zgodę na przetwarzanie moich danych osobowych.
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    Musisz wyrazić zgodę zanim przejdziesz dalej.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" value="Submit Button" class="btn btn-success w-100" form
+                                    action="mailto:edytajoana@gmail.com" method="post">
+                                    Wyślij
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+    </section>
+
+    <!--okienko modalne napisz do mnie jest ok-->
+    <div class="modal fade" id="email" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: active;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-success text-center" id="exampleModalLabel">
+                        Zadaj pytanie, zapisz się na jazdę, albo zaoferuj pomoc
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-6">
+                            <label class="form-label">Imię i nazwisko</label>
+                            <input type="text" class="form-control" placeholder="Wpisz swoje imię i nazwisko">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Miasto</label>
+                            <input type="text" class="form-control" placeholder="Twoje miasto">
+                        </div>
+                        <div class="col12">
+                            <label for="exampleFormControlInput1" class="form-label">Adres Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="col-12">
+                            <label for="floatingTextarea"> Wpisz wiadomość</label>
+                            <textarea class="form-control" placeholder="Treść wiadomości"
+                                id="floatingTextarea"></textarea>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                        required="">
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Wyrażam zgodę na przetwarzanie moich danych osobowych.
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Musisz wyrazić zgodę zanim przejdziesz dalej.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" value="Submit Button" class="btn btn-success w-100" form
+                        action="mailto:edytajoana@gmail.com" method="post">
+                        Wyślij
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--baner czym!!-->
+    <section id="rzuski">
+        <div class="container-lg p-2 mb-2">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h1 class="text-danger text-center text-bold "> PRZECZYTAJ <br> czym zajmuje się Fundacja "Końkretnie Pomagamy"</h1>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <p class="mb-3 font-weight-normal">
+                                    Fundacja Końkretnie Pomagamy - jak sama nazwa
+                        "końkretnie" wskazuje
+                        - konkretnie pomagamy przy pomocy najlepszego terapeuty jakim jest koń. Od lat
+                        popularyzujemy
+                        hipoterapię jako skuteczną formę terapii dzieci niepełnosprawnych.
+                        Pomagamy również dzieciom i młodzieży z naszego regionu z różnymi problemami zarówno w
+                        domu,
+                        jak i w szkole poprzez końtakt :) z koniem. Fundacja pomaga również psom z interwencji,
+                        żyjącym
+                        w trudnych warunkach, zagubionym, z traumami. Tworzymy dla nich dom tymczasowy i
+                        przygotowujemy
+                        do adopcji.
+                       </p>
+                       <p>
+
+                        W 2016 r. powołaliśmy do życia Fundację Końkretnie Pomagamy, by jak najwięcej
+                        dzieci i
+                        młodzieży mogło skorzystać z hipoterapii, terapeutycznej jazdy konnej oraz
+                        aktywności
+                        jeździeckiej.
+                        W ciągu ostatnich 4 lat poprzez naszą Fundację Końkretnie Pomagamy:
+                        <ul>
+                        <li>zrealizowaliśmy ponad 1.300 bezpłatnych zajęć hipoterapii dla dzieci
+                        niepełnosprawnych,</li>
+                        <li>zrealizowaliśmy ponad 1.600 bezpłatnych zajęć jazdy konnej dla dzieci i młodzieży
+                        - dzieci i młodzież skorzystały z ponad 250 dni bezpłatnych pobytów z wyżywieniem i
+                        noclegami w naszym ośrodku</li> 
+                        <li>aktywnie pomagamy też skrzywdzonym, bezdomnym psom, które są porzucone, potrzebują
+                        pomocy,
+                        żyją w trudnych warunkach. Tworzymy im kochający dom tymczasowy, pomagamy zapomnieć
+                        o
+                        złych
+                        przeżyciach i na nowo zaufać człowiekowi. Potem oddajemy do adopcji do kochających i
+                        odpowiedzialnych właścicieli. </li></ul>
+                                <p>
+                                    <strong class="text-dark">O naszych działaniach więcej przeczytasz na 
+                                     <a
+                                        href="https://www.facebook.com/koniczynka.konie/reviews/?view_public_for=155532371151211&ref=page_internal.">Facebooku!</a></strong>
+                                </p>
+                                
+<!-----napisz do nas-->
+<div class="d-flex justify-content-around">
+    <button type="button" class="btn-lg btn-success shadow rounded-2" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Napisz do nas
+    </button>
+
+</div>
+<!---------------formularz-------------------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title text-success text-center" id="exampleModalLabel">
+                Zadaj pytanie, zapisz się na jazdę, albo zaoferuj pomoc
+            </h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row">
+                <div class="col-6">
+                    <label class="form-label">Imię i nazwisko</label>
+                    <input type="text" class="form-control"
+                        placeholder="Wpisz swoje imię i nazwisko">
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Miasto</label>
+                    <input type="text" class="form-control" placeholder="Twoje miasto">
+                </div>
+                <div class="col12">
+                    <label for="exampleFormControlInput1" class="form-label">Adres Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="col-12">
+                    <label for="floatingTextarea"> Wpisz wiadomość</label>
+                    <textarea class="form-control" placeholder="Treść wiadomości"
+                        id="floatingTextarea"></textarea>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value=""
+                                id="invalidCheck" required="">
+                            <label class="form-check-label" for="invalidCheck">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych.
+                            </label>
+                            <div class="invalid-feedback">
+                                Musisz wyrazić zgodę zanim przejdziesz dalej.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" value="Submit Button" class="btn btn-success w-100" form
+                action="mailto:edytajoana@gmail.com" method="post">
+                Wyślij
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---koniec rozwijanego------------------------------>
+
+    <!--karty o nas-->
+    <section id="my" style="background-color: rgba(0, 139, 139, 0.7);">
+        <div class="container-lg p-2 mb-2">
+            <h1 class="font-bold text-light text-center py-2 mx-1">Nasze działania!</h1>
+            <hr class="text-light">
+            <div class="row">
+                <div class="col-lg card bg-light text-dark p-sm-2 me-4" style="width:18rem;">
+                    <img weight="500px" class="card-img-top img-fluid" src="./zdj/hipocopy1slate.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Hipoterapia</h5>
+                        <hr>
+                        <p class="card-text"> Projekt pomocy osobom niepełnosprawnym poprzez popularyzację
+                            hipoterapii
+                            jako
+                            skutecznej formy terapii dzieci niepełnosprawnych. Chcielibyśmy, aby z
+                            hipoterapii
+                            mogli
+                            skorzystać wszyscy, którzy tego potrzebują w naszym regionie. We współpracy z
+                            ośrodkiem
+                            Koniczynka Hipoterapia i Jazda Konna zbieramy fundusze na ten cel i realizujemy
+                            zajęcia.
+
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-success shadow rounded px-2 mb-2 w-100"
+                            href="https://www.facebook.com/koniczynka.konie/reviews/?view_public_for=155532371151211&ref=page_internal.">Koniczynka
+                            na Facebooku.<br>
+                            Dowiedz się więcej! </a>
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+                <div class="col-lg card bg-light text-dark p-sm-2 me-4" style="width:18rem;">
+                    <img weight="500px" class="card-img-top img-fluid" src="./zdj/koniedenim.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Wspieramy młodzież</h5>
+                        <hr>
+
+                        <p class="card-text">Końkretnie pomagamy dzieciom i młodzieży z naszego
+                            regionu
+                            z
+                            różnymi
+                            problemami w domu, jak i w szkole poprzez końtakt :) z koniem. Od dawna
+                            wiadomo,
+                            że
+                            konie otwierają, praca z nimi uczy samodyscypliny, pewności siebie,
+                            cierpliwości,
+                            empatii.
+                            Jazda
+                            konna jest dla nich ucieczką od ciągłego bezczynnego siedzenia ze smartfonem w
+                            ręku
+                            lub
+                            przy
+                            komputerze. Chcemy dotrzeć z pomocą przede wszystkim dla dzieci i
+                            młodzieży z
+                            biednych
+                            i patologicznych rodzin. Spełniamy marzenia tych, dla których konie to pasja, a
+                            nie
+                            mogą
+                            jej
+                            realizować z powodu braku funduszy.
+                        </p>
+
+                    </div>
+                    <div class="card-footer">
+
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+
+                <div class="col-lg card bg-light text-dark p-sm-2 me-4" style="width:18rem;">
+                    <img weight="500px" class="card-img-top img-fluid" src="./zdj/piescopygrupa1.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Pomagamy psom z interwencji</h5>
+                        <hr>
+
+                        <p class="card-text">Pomagamy psom z interwencji, żyjącym w trudnych warunkach,
+                            zagubionym,
+                            z
+                            traumami. Tworzymy dla nich taki dom tymczasowy, gdzie czują się bezpiecznie,
+                            mogą z
+                            powrotem
+                            zaufać ludziom, a nasze psie stado także im w tym pomaga. Publikujemy i
+                            udostępniamy
+                            pieski
+                            zaginione lub porzucone, by znaleźć im dom. Radzimy ludziom, jak wybrać psa
+                            dopasowanego
+                            do
+                            siebie ze schroniska, jak wychować psa, by nie wszedł na głowę itp.
+
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-success shadow rounded px-2 mb-2 w-100"
+                            href="https://www.facebook.com/koniczynka.konie/reviews/?view_public_for=155532371151211&ref=page_internal.">Nasze
+                            adopcje! </a>
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--karuzela- i modale----------------------->
+    <section id="bannery">
+        <div height="100" class="container-flex" style="background-color: rgba(0, 139, 139, 0.7);">
+            <div class="row">
+                <!---pierwsza kolumna>>>>????-->
+                <div class="col-lg-6 ">
+
+                    <!----karty-->
+                    <div class="container mb-container px-5">
+                        <h3 class="card-title text-light font-monospace text-bold mt-3
+                    ">Działamy!</h3>
+                        <h1 class="card-title text-light font-monospace text-bold mt-3
+                    "> Sprawdź nasze akcje</h1>
+                        <hr class="text-light">
+                        <div class="card mb-lg-2">
+                            <!--jak ty mozesz pomoc?-->
+                            <h5 class="card-header text-danger">Jak Ty możesz pomóc?</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Wesprzyj nasze działania!</h5>
+                                <p class="card-text">Możliwości jest wiele: wspomóż nam finansowo, publikuj informacje o
+                                    nas, przekazuj je dalej.</p>
+
+                                <!--canvas wy pomagacie-->
+
+                                <button class="btn btn-success shadow rounded" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#drugi" aria-controls="offcanvasRight">Przeczytaj więcej</button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="drugi"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="drugi">
+                                            <strong class="text-success font-monospace">Jak Ty możesz pomóc?</strong>
+                                        </h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <p>
+                                            <strong class="text-success font-monospace">Możesz zostać Wirtualnym
+                                                Opiekunem wybranego/ych koni z tej stajni </strong>i zostać
+                                            wyróżnionym na boksie swojego ulubionego konia jako Opiekun Owsiany,
+                                            Brązowy,
+                                            Srebrny lub Złoty (w zależności od wielkości kwoty, którą przekazałeś/aś).
+                                            Wystarczy wypełnić formularz <a href="#formularz"></a> na stronie, wybrać
+                                            konia i zasilić konto naszej
+                                            Fundacji.
+                                        </p>
+                                        <br>
+                                        <p><strong class="text-success font-monospace">Dzieci, które skorzystają dzięki
+                                                Tobie z hipoterapii na pewno będą wdzięczne</strong>
+                                            za pomoc! Poza tym planujemy dobudowanie do hali pomieszczenia krytego,
+                                            dzięki
+                                            którego rodzice dzieci będą mogli się schronić przed deszczem i wiatrem,
+                                            równocześnie móc obserwować zajęcia hipoterapii.</p>
+                                        <br>
+                                        <p><strong class="text-success font-monospace">Udostępniaj znajomym nasze
+                                                wydarzenia, akcje, posty, artykuły na Facebooku,
+                                                wesprzyj naszą Fundację: </strong></p>
+
+                                        <p><strong class="text-sukcess font-monospace">Fundacja "Końkretnie Pomagamy"
+                                            </strong>
+                                            <br>
+                                            Rzuski Las 2 <br>
+                                            tel. 667 544 333, <br> email: biuro@konkretniepomagamy.pl
+                                        </p>
+                                        <strong class="font-monospace text-center">Numer konta: <br>
+                                            mBank 28 1140 2004 0000 3802 7644 8788 <br>
+                                            KRS: 0000633615, NIP: 839-318-65-88, REGON: 36537078300000</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---koniec wy mpomagacie-->
+
+
+
+                        <!---jak my pomagamy-->
+                        <div class="card mb-lg-2">
+                            <h5 class="card-header text-danger">Jak pomagamy w rehabilitacji?</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Dużo się u nas dzieje!</h5>
+                                <p class="card-text">Rehablitacja jest niezbędną częścią każdej terapii. Zbieramy
+                                    pieniądze na zajęcia hipoterapii dzieci niepełnosprawnych
+                                    oraz dzieci zdrowych po traumach.
+                                </p>
+                                <!---offfcanvas--------------------->
+                                <button class="btn btn-success shadow rounded" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Dowiedz się
+                                    więcej!</button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h6 id="offcanvasRightLabel">
+                                            <strong class="text-success font-monospace">
+                                                Realizujemy projekt pomocy osobom niepełnosprawnym
+                                                poprzez popularyzację hipoterapii jako skutecznej formy terapii dzieci
+                                                niepełnosprawnych.</strong>
+                                        </h6>
+
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <hr>
+                                    <div class="offcanvas-body">
+                                        Naszą misją jest m.in. upowszechnianie hipoterapii w powiecie lęborskim jako
+                                        skutecznej formy rehabilitacji dzieci niepełnosprawnych i udostępnienie tej
+                                        formy terapii dla osób, których na to nie stać. Chcielibyśmy, aby z
+                                        hipoterapii mogli skorzystać wszyscy, którzy tego potrzebują w naszym
+                                        regionie. Będziemy uświadamiać lekarzy o skuteczności hipoterapii, drukować
+                                        ulotki itp. itd.. We współpracy z Ośrodkiem Koniczynka Hipoterapia i Jazda
+                                        Konna zbieramy fundusze na ten cel.
+                                        <br>
+                                        Poniżej podajemy w skrócie 7 korzyści, które daje koń podczas hipoterapii,
+                                        co w połączeniu z kontaktem z naturą (zajęcia na łonie przyrody, w lesie),
+                                        współpracą terapeutyczną i rehabilitacyjną z hipoterapeutą daje dziecku nie
+                                        tylko większą sprawność ale też niezwykłą radość i przyjemność.
+                                        <br>
+                                        <hr w="100">
+                                        <strong class="text-success font-monospace "> 7 najważniejszych korzyści, jakie
+                                            daje koń podczas hipoterapii:</strong>
+
+                                        <ul>
+                                            <li>Wywołuje uśmiech na twarzy dziecka i szczęście.</li>
+
+                                            <li>Poprzez o 1 stopień cieplejsze ciało koń rozgrzewa mięśnie siedzącego na
+                                                nim
+                                                dziecka, reguluje napięcie mięśniowe.</li>
+
+                                            <li>Przekazuje prawidłowy wzorzec chodu dla dzieci nie potrafiących chodzić
+                                                –
+                                                dzieci siedząc na idącym koniu poruszają biodrami jakby chodziły.</li>
+
+                                            <li>Ciało konia jest naturalnym materacem, jego szyja drabinką do ćwiczeń,
+                                                naturalnie doskonali równowagę, koordynację, poczucie rytmu, przyśpiesza
+                                                czynności fizjologiczne (problemy z wypróżnianiem)</li>
+
+                                            <li>większa poczucie własnej wartości poprzez poczucie sprawstwa, możliwości
+                                                kierowania nim, oglądania świata wyżej od innych.</li>Z
+
+                                            <li>Koryguje postawę ciała przez konieczność prawidłowego siedzenia na nim
+                                                „bez
+                                                garbienia się”.</li>
+
+                                            <li>Ma działanie motywacyjne i edukacyjne: otwiera osoby zamknięte, uspokaja
+                                                osoby za bardzo „do przodu” - energiczne, zmniejsza zaburzenie
+                                                emocjonalne.</li>
+                                        </ul>
+                                        <hr w="100">
+
+                                        <strong class="font-monospace text-success"> Więcej o hipoterapii przeczytasz
+                                            tutaj</strong>
+                                        Hipoterapia odbywa się w Ośrodku Hipoterapii i Jazdy Konnej Koniczynka w
+                                        Krępie Kaszubskiej, istniejącym tam od 6 lat. Zajęcia są tam profesjonalnie
+                                        prowadzone przez wykwalifikowanego i doświadczonego hipoterapeutę, członka
+                                        Polskiego Towarzystwa Hipoterapeutycznego. Przychodzą tam dzieci z
+                                        Przedszkola Integracyjnego „Jesteśmy razem” w Lęborku, ze Stowarzyszenia
+                                        Pomocy Osobom ze Spektrum Autyzmu „Niebieski Skarb” oraz ze Szkoły
+                                        Specjalnej w Lęborku. W czasie niepogody zajęcia odbywają się na hali.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---jak mozesz koniec-->
+
+                        <!---------------------------------------------------karta z formularzem-->
+                        <div class="card mb-lg-2">
+                            <h5 class="card-header text-danger">Wspieramy młodzież</h5>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Zgłoś się!</h5>
+                                <p class="card-text">Wypełnij formularz rekrutacyjny do projektu
+                                    "Przez ruch po zdrowie – jeździectwo sposobem na zdrowie, aktywność fizyczną i siłę
+                                    charakteru".</p>
+
+
+                                <!--------------------------------------------------drugi modal zasady-->
+                                <!-- Button zasady modal -->
+                                <button type="button" class="btn btn-outline-success shadow rounded mb-1"
+                                    data-bs-toggle="modal" data-bs-target="#modal">
+                                    Sprawdź zasady uczestnictwa w projekcie
+                                </button>
+                                <!-- Button formularz modal -->
+                                <button type="button" class="btn btn-success shadow rounded mb-1 mx-3"
+                                    data-bs-toggle="modal" data-bs-target="#formularz">
+                                    Wypełnij formularz </button>
+                                <!-- Modal zasady---------------------------->
+                                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Zasady programu</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Celem projektu jest promocja uprawiania sportu i aktywności fizycznej
+                                                    poprzez organizację bezpłatnych zajęć jazdy konnej dla 5 młodych
+                                                    mieszkańców gminy Nowa wieś Lęborska.
+                                                    <hr class="text-dark">
+                                                    <strong>Pamiętaj:</strong>
+                                                <ul>
+                                                    <li>Musisz mieszkać w Gminie Nowa Wieś Lęborska</li>
+                                                    <li>Musisz mieć między 7 a 17 lat</li>
+                                                    <li>Musisz mieć chęć nauczenia się jazdy konnej</li>
+                                                    <li>Musisz mieć dyspozycyjność, żeby móc poświęcić czas na jedne
+                                                        zajęcia w tygodniu</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success"
+                                                    data-bs-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal formularz-->
+
+                                <div class="modal fade" id="formularz" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    style="display: active;" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title text-success text-center" id="exampleModalLabel">
+                                                    Wypełnij formularz, pamiętając o wypełnieniu wszystkich pól.
+                                                </h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="col-12">
+                                                    <label class="form-label">Imię i nazwisko</label>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Wpisz swoje imię i nazwisko">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label class="form-label">Miasto</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Twoje miasto">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="form-label">Wiek</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Twoje miasto">
+                                                    </div>
+                                                    <div class="col12">
+                                                        <label for="exampleFormControlInput1" class="form-label">Adres
+                                                            Email</label>
+                                                        <input type="email" class="form-control"
+                                                            id="exampleFormControlInput1"
+                                                            placeholder="name@example.com">
+                                                    </div>
+
+
+                                                    <div class="col-12">
+                                                        <label for="exampleFormControlInput1" class="form-label">Stopień
+                                                            zaawansowania w jeździe konnej</label>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected></option>
+                                                            <option value="1">Początkujący</option>
+                                                            <option value="2">Stęp, kłus</option>
+                                                            <option value="3">Stęp, kłus, galop</option>
+                                                            <option value="4">Zaawansowany</option>
+
+                                                        </select>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="invalidCheck" required="">
+                                                            <label class="form-check-label" for="invalidCheck">
+                                                                Wyrażam zgodę na przetwarzanie moich danych osobowych.
+                                                            </label>
+                                                            <div class="invalid-feedback">
+                                                                Musisz wyrazić zgodę zanim przejdziesz dalej.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" value="Submit Button"
+                                                    class="btn btn-success w-100" form=""
+                                                    action="mailto:edytajoana@gmail.com" method="post">
+                                                    Wyślij
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---------------------------------------------------zwierzaki galeria druga kolumna-->
+                <div class="col-lg-6">
+
+                    <div id="galeria" width="100" class="mb-container px-5 ">
+                        <h3 class="card-title text-light font-monospace text-bold mt-3
+                    ">Galeria</h3>
+                        <h1 class="card-title text-light font-monospace text-bold mt-3
+                    "> Zobacz nasze zwierzaki</h1>
+                        <hr class="text-light">
+                        <div class="col card-sm bg-light text-success p-sm-2 me-4 rounded">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                        aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                        aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                                        aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                                        aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                                        aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                                        aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./zdj/fot1.jpg" class="img-thumbnail w-100 d-block" alt="1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Nasi podopieczni </h5>
+                                            <p>Większość z nich znajduje nowy dom</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot10.jpg" class="img-thumbnail w-100 d-block" alt="2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Hipoterapia dla najmłodszych </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot11.jpg" class="img-thumbnail w-100 d-block" alt="3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Nasi podopieczni i nasze konie </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot3.jpg" class="img-thumbnail w-100 d-block" alt="4">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5> Ważną częścią zajęć są jazdy w teren </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot4.jpg" class="img-thumbnail w-100 d-block" alt="5">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Stawiamy na aktywne spędzanie czasu </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot5.jpg" class="img-thumbnail w-100 d-block" alt="6">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy dzieciom i młodzieży</h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot6.jpg" class="img-thumbnail w-100 d-block" alt="7">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot7.jpg" class="img-thumbnail w-100 d-block" alt="8">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot8.jpg" class="img-thumbnail w-100 d-block" alt="9">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot9.jpg" class="img-thumbnail w-100 d-block" alt="10">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/kon1.jpg" class="img-thumbnail w-100 d-block" alt="11">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p>K</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/konie2.jpg" class="img-thumbnail w-100 d-block" alt="12">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/mniamnior1.jpg" class="img-thumbnail w-100 d-block" alt="13">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/fot2.jpg" class="img-thumbnail w-100 d-block" alt="14">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./zdj/psy3.jpg" class="img-thumbnail w-100 d-block" alt="15">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Końkretnie pomagamy </h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                W 2016 r. powołaliśmy do życia Fundację Końkretnie Pomagamy, by jak najwięcej
+                                dzieci i młodzieży mogło skorzystać z hipoterapii, terapeutycznej jazdy konnej oraz
+                                aktywności jeździeckiej. Aktywnie pomagamy też skrzywdzonym, bezdomnym psom, które są
+                                porzucone, potrzebują pomocy, żyją w trudnych warunkach. Tworzymy im kochający dom
+                                tymczasowy, pomagamy zapomnieć o złych przeżyciach i na nowo zaufać człowiekowi. Potem
+                                oddajemy do adopcji do kochających i odpowiedzialnych właścicieli.
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+
+    <!---koniec karuzeli-->
+
+
+    <!--footer-->
+    <section id="footer">
+
+        <footer class="container-fluid pt-5 pb-2 text-light w-100" style="background-color: rgba(0, 139, 139, 0.7);">
+            <hr>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="navbar-text text-justify-center">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                            </svg> </p>
+                        <p>Rzuski Las 2</p>
+                        <p> jdfgft</p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="navbar-text">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg></p>
+                        <p>Telefon:</p>
+                        <p>+48 667 544 333</p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="navbar-text align-item-center">
+                        <p> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg></p>
+                        <p>E-mail:</p>
+                        <p> biuro@konkretniepomagamy.pl</p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <span class="navbar-text">
+                        <p><a href="https://www.facebook.com/fundacja.konkretnie.pomagamy/?ref=page_internal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg> </a></p>
+                        <p class="text-decoration-none">Sprawdź naszą stronę <br>na facebooku</p>
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center justify-content-md-center pb-2 mb-3">
+                <div class="col-md-12">
+                    <span class="navbar-text"> © 2022 by <a
+                            href="https://www.facebook.com/fundacja.konkretnie.pomagamy/?ref=page_internal">Końkretnie
+                            Pomagamy</span>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
